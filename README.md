@@ -1,4 +1,4 @@
-# FABR - Firewall Automatizado com Blacklists e Reputação
+# FABR - Firewall Automatizado Baseado em Reputação
 
 O **FABR (Firewall Automatizado com Blacklists e Reputação)** é uma solução desenvolvida para automação do bloqueio e degradação de conexões suspeitas em redes computacionais. Ele monitora conexões de entrada, consulta blacklists e toma ações baseadas na reputação dos endereços IPs. A solução foi projetada para integrar-se ao AbuseIPDB e a regras dinâmicas de IPTables, garantindo maior segurança e eficiência no tratamento de conexões maliciosas.
 
