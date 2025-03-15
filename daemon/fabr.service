@@ -1,0 +1,20 @@
+[Unit]
+Description=FABR tool monitoring service
+After=network.target
+
+[Service]
+ExecStart=/opt/python/bin/python3 /etc/fabr/monitor.py
+WorkingDirectory=/etc/fabr
+Restart=always
+User=root
+Group=root
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=fabr-monitor
+Environment="FABR_PATH=/etc/fabr"
+Environment="PYTHON_PATH=/opt/python/bin/python3"
+Environment="PYTHONUNBUFFERED=1"
+Environment="API_KEY='Su4Ap1K3y4qu1'"
+
+[Install]
+WantedBy=multi-user.target
